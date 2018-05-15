@@ -1,0 +1,34 @@
+.Services--header {
+  p {
+    color: #a1a2a2;
+    font-size: 1.1rem;
+  }
+}
+
+.Services {
+  text-align: center;
+  display: grid;
+  grid-gap: 15px;
+  margin: 35px 0;
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: auto;
+    color: #a1a2a2;
+  }
+}
+
+@media (min-width: 576px) {
+  .Services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Services {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

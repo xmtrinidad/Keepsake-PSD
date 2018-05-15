@@ -1,0 +1,41 @@
+.Journal--header {
+  padding-bottom: 15px;
+  p {
+    color: #a1a2a2;
+    font-size: 1.1rem;
+  }
+}
+
+.Journals {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.Journals__journal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  .Journals__journal-right {
+    overflow: hidden;
+    max-height: 175px;
+  }
+  .Journals__journal--date {
+    color: #c1c2c2;
+  }
+  .Journals__journal--title {
+    margin: 7px 0;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  .Journals__journal--info {
+    font-size: .88rem;
+    color: #a1a2a2;
+    max-height: 85px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Journals {
+    grid-template-columns: 1fr 1fr;
+  }
+}
