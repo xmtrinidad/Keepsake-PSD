@@ -1,10 +1,12 @@
 <div class="Works--header">
-  <h2>Our Awesome Works <span>--</span></h2>
+  <h2>Our Awesome Works <span class="dashes">--</span></h2>
   <button>Filter Portfolio</button>
 </div>
 <ul class="Works">
   <li *ngFor="let workImage of workImages" class="Works__work">
-    <img [src]="workImage.img" [alt]="workImage.alt" class="Works__work-img">
+    <a href="#" class="list--link">
+      <img [src]="workImage.img" [alt]="workImage.alt" class="Works__work-img">
+    </a>
   </li>
 </ul>
 <div class="Works--footer">

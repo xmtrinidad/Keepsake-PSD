@@ -3,7 +3,11 @@
   <nav class="Nav">
     <ul class="Nav__list">
       <li *ngFor="let navItem of navItems" class="Nav__list-item"><a href="#">{{navItem}}</a></li>
-      <li><a href="#" class="Nav--favorite"></a></li>
+      <li>
+        <a href="#" class="Nav--favorite">
+          <i class="fas fa-heart"></i>
+        </a>
+      </li>
     </ul>
     <button type="button" class="Nav__ham">
       <i class="fas fa-bars fa-2x"></i>
@@ -20,4 +24,35 @@
   <section>
     <app-services></app-services>
   </section>
+  <section>
+    <app-journal></app-journal>
+  </section>
 </main>
+
+<footer class="Footer">
+  <div class="container">
+    <p>&copy; Keepsake.  All rights reserved.  Theme by elemis</p>
+    <ul class="Footer__social-links">
+      <li>
+        <a href="#">
+          <i class="fas fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>

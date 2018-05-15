@@ -1,13 +1,15 @@
 <div class="Services--header">
-  <h2>What do we do --</h2>
+  <h2>What do we do <span class="dashes">--</span></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at beatae consectetur cum eligendi harum, officiis omnis</p>
 </div>
 <ul class="Services">
   <li *ngFor="let serviceType of serviceTypes" class="Services__service">
-    <div>
-      <img [src]="serviceType.img" alt="Service">
-    </div>
-    <h3>{{serviceType.title}}</h3>
-    <p>{{serviceType.info}}</p>
+    <a href="#" class="list--link">
+      <div>
+        <img [src]="serviceType.img" alt="Service">
+      </div>
+      <h3>{{serviceType.title}}</h3>
+      <p>{{serviceType.info}}</p>
+    </a>
   </li>
 </ul>

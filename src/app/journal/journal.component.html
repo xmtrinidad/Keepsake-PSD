@@ -1,0 +1,14 @@
+<div class="Journal--header">
+  <h2>From the journal <span class="dashes">--</span></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci libero minus qui quis repudiandae veniam vero voluptatibus?</p>
+</div>
+<ul class="Journals">
+  <li *ngFor="let journalItem of journalItems" class="Journals__journal">
+    <a href="#" class="list--link">
+      <span class="Journals__journal--date">{{journalItem.date}} / {{journalItem.category}}</span>
+      <h3>{{journalItem.title}}</h3>
+      <img [src]="journalItem.img" alt="journal">
+      <p>{{journalItem.info}}</p>
+    </a>
+  </li>
+</ul>
