@@ -1,0 +1,16 @@
+<div class="Works--header">
+  <h2>Our Awesome Works <span>--</span></h2>
+  <button>Filter Portfolio</button>
+</div>
+<ul class="Works">
+  <li *ngFor="let workImage of workImages" class="Works__work">
+    <img [src]="workImage.img" [alt]="workImage.alt" class="Works__work-img">
+  </li>
+</ul>
+<div class="Works--footer">
+  <h3>Would you love to work with us?</h3>
+  <a href="#">
+    <i class="far fa-envelope"></i>
+    Contact Us
+  </a>
+</div>
