@@ -1,0 +1,30 @@
+.Works--header {
+  margin: 3px 0 20px 0;
+}
+
+.Works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.Works--footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+  h3 {
+    font-size: 1.6rem;
+  }
+  a {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+}
+
+@media (min-width: 768px) {
+  .Works {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
