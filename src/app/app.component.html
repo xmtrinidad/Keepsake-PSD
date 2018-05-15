@@ -32,24 +32,9 @@
   <div class="container">
     <p>&copy; Keepsake.  All rights reserved.  Theme by elemis</p>
     <ul class="Footer__social-links">
-      <li>
-        <a href="#">
-          <i class="fas fa-rss"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fab fa-pinterest"></i>
+      <li *ngFor="let socialIcon of socialIcons" [ngStyle]="{'background-color': socialIcon.color}">
+        <a href="#" class="list--link">
+          <i [class]="socialIcon.icon"></i>
         </a>
       </li>
     </ul>

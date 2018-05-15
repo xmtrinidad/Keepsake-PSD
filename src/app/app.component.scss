@@ -32,4 +32,30 @@ section {
   margin: 100px 0;
 }
 
+.Footer {
+  background: #2d2d30;
+  padding: 30px 0;
+  text-align: center;
+  p {
+    color: #bdbdbd;
+  }
+  .Footer__social-links {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 10px;
+      font-size: 1.1rem;
+      border-radius: 100%;
+      a {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
 
