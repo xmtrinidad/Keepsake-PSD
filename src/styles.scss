@@ -1,3 +1,11 @@
+body {
+  font-family: Bebas Neue, sans-serif;
+}
+
+h2 {
+
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -18,4 +26,36 @@
   .container {
     width: 1170px;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list--link {
+  display: block;
+}
+
+button {
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+}
+
+.red-btn {
+  background-color: #ef5f60;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px;
+}
+
+.dashes {
+  color: #ef5f60;
 }

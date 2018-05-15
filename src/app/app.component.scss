@@ -1,0 +1,30 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .Header__logo {
+    color: transparent;
+    background: url('/assets/images/logo.gif') no-repeat;
+    background-size: contain;
+  }
+  .Header__ham {
+    font-size: .78rem;
+  }
+}
+
+.Nav {
+  .Nav__list-item {
+    padding: 10px 3px;
+    margin: 7px 0;
+    font-size: 1.2rem;
+  }
+  .Nav--favorite {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

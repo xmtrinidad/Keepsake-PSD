@@ -1,19 +1,18 @@
-<header class="container">
-  <h1>Keepsake Logo</h1>
-  <nav class="Nav">
-    <ul class="Nav__list">
-      <li *ngFor="let navItem of navItems" class="Nav__list-item"><a href="#">{{navItem}}</a></li>
-      <li>
-        <a href="#" class="Nav--favorite">
-          <i class="fas fa-heart"></i>
-        </a>
-      </li>
-    </ul>
-    <button type="button" class="Nav__ham">
-      <i class="fas fa-bars fa-2x"></i>
-    </button>
-  </nav>
+<header class="container Header">
+  <h1 class="Header__logo"><a href="#" class="logo--link">Keepsake Logo</a></h1>
+  <button (click)="onMobileMenuClick()" type="button" class="Header__ham red-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </button>
 </header>
+<nav *ngIf="mobileNavActive" class="container Nav">
+  <ul class="Nav__list">
+    <li *ngFor="let navItem of navItems" class="Nav__list-item"><a href="#">{{navItem}}</a></li>
+  </ul>
+  <a href="#" class="Nav--favorite red-btn">
+    <i class="fas fa-heart"></i>
+  </a>
+</nav>
+
 
 <app-intro></app-intro>
 
