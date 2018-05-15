@@ -15,6 +15,7 @@
 .Nav {
   padding-bottom: 20px;
   .Nav__list-item {
+    color: #4d4d4d;
     padding: 10px 3px;
     margin: 7px 0;
     font-size: 1.2rem;
@@ -58,4 +59,28 @@ section {
   }
 }
 
+@media (min-width: 768px) {
+  .HeaderNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 4px;
+  }
+  .Header__ham {
+    display: none;
+  }
+  .Nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .Nav__list {
+    display: flex;
+    .Nav__list-item {
+      margin-right: 15px;
+      padding: 3px 10px;
+      font-size: 1.3rem;
+    }
+  }
+}
 
